@@ -1,5 +1,4 @@
 -- replace the Player1 and Player2 with different roblox usernames, the roblox usernames entered will be the usernames that can access the wishlist, however if the person that executes the script's username dosent match with any in the local wishlist, they will be kicked.
-
 local wishlist = {"Player1", "Player2"}
 
 -- DONT TOUCH THIS
