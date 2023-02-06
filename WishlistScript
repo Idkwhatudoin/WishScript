@@ -1,0 +1,27 @@
+-- replace the Player1 and Player2 with different roblox usernames, the roblox usernames entered will be the usernames that can access the wishlist, however if the person that executes the script's username dosent match with any in the local wishlist, they will be kicked.
+
+local wishlist = {"Player1", "Player2"}
+
+-- DONT TOUCH THIS
+function checkWishlist(player)
+  for _, username in ipairs(wishlist) do
+    if username == player.Name then
+      return true
+    end
+  end
+  return false
+end
+
+-- DONT TOUCH THIS EITHER
+function executeOrKick(player)
+  if checkWishlist(player) then
+    -- Put your script here, this script will be executed if the username of the player executing this script is in the local wishlist.
+    
+  else
+    -- Kick the player if they are not in the wishlist
+    player:Kick("You are not in the wishlist.")
+  end
+end
+
+-- end of wishlist
+-- if u want an advanced wishlist system with a custom file/loadstring plus custom executor support u can buy WishScript PLUS.
